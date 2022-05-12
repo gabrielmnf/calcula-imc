@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kulim+Park:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Farsan&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="funcoes.js"></script>
+  </head>
+  <body>
+    <section id="menu">
+      <nav id="menu-horizontal">
+        <ul>
+          <li><a href="#">Início</a></li>
+          <li><a href="#area2">Informações</a></li>
+          <li><a href="#area3">Calcular</a></li>
+          <!--<li><a href="#">Menu4</a></li>-->
+        </ul>
+      </nav>
+    </section>
+
+    <section id="area1">
+      <p id="textoMulher">Índice de Massa Corporal</p>
+      <img
+        id="mulher"
+        src="/assets/images/undraw_random_thoughts_re_cob6.svg"
+        alt="Mulher pensando em coisas aleatórias..."
+      />
+    </section>
+
+    <section id="area2">
+      <table id="tabela">
+        <caption id="caption">
+          Informações
+        </caption>
+        <thead>
+          <tr>
+            <th>Peso</th>
+            <th>Classificação</th>
+            <!--<th>Titulo coluna 3</th>-->
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Abaixo de 18,5</td>
+            <td>Abaixo do Peso</td>
+            <!--<td>conteudo 3</td>-->
+          </tr>
+          <tr>
+            <td>Entre 18,6 e 24,9</td>
+            <td>Peso ideal (Parabéns!)</td>
+            <!--<td>conteudo 3</td>-->
+          </tr>
+          <tr>
+            <td>Entre 25,0 e 29,9</td>
+            <td>Levemente Acima do Peso</td>
+            <!--<td>conteudo 3</td>-->
+          </tr>
+          <tr>
+            <td>Entre 30,0 e 34,9</td>
+            <td>Obesidade Grau I</td>
+            <!--<td>conteudo 3</td>-->
+          </tr>
+          <tr>
+            <td>Entre 35,0 e 39,9</td>
+            <td>Obesidade Grau II (Severa)</td>
+            <!--<td>conteudo 3</td>-->
+          </tr>
+          <tr>
+            <td>Acima de 40</td>
+            <td>Obesidade Grau III (Mórbida)</td>
+            <!--<td>conteudo 3</td>-->
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2"><a href="https://guiadafarmacia.com.br/imc-o-que-e-como-calcular-e-quais-os-valores-ideais-para-cada-idade/"  target="_blank">Fonte</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <section id="area3">
+      <input type="text" name="txtedtpeso" id="edtPeso" placeholder="Insira seu Peso" />
+
+      <input type="text" name="txtaltura" id="edtAltura" placeholder="Insira sua altura" />
+
+      <button id="btnCalcIMC" type="button" onclick="calculaIMC()">
+        Calcular
+      </button>
+
+      <p id="mostraValor"></p>
+      <p id="textoParagrafo"><p>
+      <p><a id="voltar" href="#area2"></a></p>
+
+    </section>
+  </body>
+</html>

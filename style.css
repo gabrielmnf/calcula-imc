@@ -1,0 +1,136 @@
+/* reset */
+*{
+    margin: 0;
+    border: 0;
+}
+
+#menu-horizontal{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: fixed; /*Fica fixo ao rolar a página*/
+    width: 100%;
+    top: 0;
+    left: 0;
+    font-family: 'Kulim Park', sans-serif;
+}
+
+#menu-horizontal ul{
+    list-style: none; /* tira os marcadores */
+    padding: 0;
+    background-color: rgb(21, 21, 21);
+    text-align: left;
+}
+
+#menu-horizontal ul li{
+    display:inline-block;
+    margin: 10px; 
+}
+
+#menu-horizontal ul li a{
+    font-size: 1.6rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#menu-horizontal ul li a:hover{
+    background-color: rgb(87, 87, 87);
+    opacity: 0.5;
+}
+
+#area1{
+    background-color: rgb(219, 174, 223);
+    height: 100vh; /* ViewPort */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top:1em;
+}
+
+#area2{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/assets/images/endless-constellation.svg);   
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#textoMulher{
+    font-size: 3.5rem;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-family: 'Square Peg', cursive;
+}
+
+@media only screen and (max-width: 800px) {
+    #textoMulher {
+        font-size: 2rem;
+        margin-top: 3em;
+        margin-bottom: 2em;
+    }
+    #mulher{
+        height: 20em;
+    }
+}
+
+#tabela{
+    font-family: 'Kulim Park', sans-serif;
+    font-size: 1.3rem;
+    color:rgb(88, 43, 92);  
+}
+
+#caption{
+    color:rgb(254, 248, 255);
+}
+
+#tabela, tr, td, th{
+    border:rgb(163, 35, 175) solid 1px;
+    width:540px;
+    padding:0px;
+    background-color:rgb(219, 174, 223);
+    color:rgb(88, 43, 92);
+}
+td{
+    width:150px;
+    height:30px;
+    background-color:rgb(219, 174, 223);
+    color:rgb(88, 43, 92);
+}
+th{
+    background-color:rgb(219, 174, 223);
+    color:rgb(88, 43, 92);
+}
+
+#area3{
+    height: 100vh;
+    background-color: rgb(219, 174, 223);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#edtPeso, #edtAltura, #btnCalcIMC {
+    font-size: 2em;
+    font-family: 'Kulim Park', sans-serif;
+}
+
+#mulher{
+    height: 30em;
+}
+
+p{
+    font-family: 'Farsan', cursive;
+    font-size: 1.5em;
+}
+
+
+
+
+
+
